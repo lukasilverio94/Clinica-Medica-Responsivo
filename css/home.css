@@ -287,6 +287,9 @@ footer {
     width: 100%;
   }
 
+  .btn {
+    opacity: 1;
+  }
   iframe {
     height: 50%;
   }
