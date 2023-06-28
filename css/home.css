@@ -32,6 +32,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 .logo-top {
   width: 10rem;
@@ -65,7 +66,7 @@ header {
 
 /* BANNER */
 #banner {
-  width: 100%;  
+  width: 100%;
   height: 80vh;
   background-image: url("../assets/recepcao.png");
   background-size: cover;
@@ -85,6 +86,7 @@ header {
 .text-container {
   text-align: center;
   padding: 2.2rem;
+  text-align: center;
 }
 
 .text-container h2 {
@@ -96,7 +98,6 @@ header {
 .text-container p {
   width: 100%;
   max-width: 800px;
-  min-width: 320px;
   margin: 0 auto;
   font-size: 1.1rem;
 }
@@ -146,6 +147,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0 1 auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -186,7 +188,6 @@ header {
 iframe {
   padding: 0 1.5rem;
   width: 100%;
-  min-width: 700px;
 }
 
 /* FOOTER. */
@@ -207,7 +208,6 @@ footer {
 .footer-logo {
   width: 100%;
   max-width: 200px;
-  min-width: 90px;
 }
 .info-footer p {
   color: #fff;
@@ -217,43 +217,65 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 425px) {
-  .container {
-    width: 100%;
-    padding: 1.2rem;
+@media screen and (max-width: 350px) {
+  .navbar {
+    padding-left: 1rem;
   }
 
-  .text-container {
-    margin: 0 auto;
+  .navbar li a {
+    margin-right: -1.2rem;
+    padding: 0;
+  }
+
+  .banner-text {
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 455px) {
+  header {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    padding: 1rem 2rem;
   }
   .top-container {
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
-
+  header {
+    padding: 0;
+  }
   .navbar {
-    border-top: 2px solid black;
-    padding-top: 1rem;
+    border-top: 2px solid #23232321;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
   .navbar li a {
-    font-size: 1.2rem;
+    margin-right: 1.2rem;
   }
-
   #banner {
+    height: 200px;
     margin-top: 2rem;
-    height: 250px;
-    padding: 1.1rem;
   }
   #banner h1 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
 
+  .banner-text {
+    margin-top: 2.5rem;
+  }
+  #specialities {
+    margin-top: 0;
+  }
   .features img {
     display: none;
   }
@@ -266,6 +288,55 @@ footer {
   }
 
   iframe {
-    display: none;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .logo-top {
+    width: 100px;
+  }
+
+  .navbar {
+    padding-left: 1rem;
+  }
+
+  .top-container {
+    flex-wrap: nowrap;
+  }
+
+  #banner {
+    height: 300px;
+  }
+
+  #banner h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .text-container {
+    padding: 1rem;
+  }
+  .text-container h2 {
+    margin-top: 1rem;
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .cards img {
+    max-width: 400px;
+  }
+
+  .contact-container {
+    padding: 0 1rem;
   }
 }
