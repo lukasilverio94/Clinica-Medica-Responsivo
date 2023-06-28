@@ -1,0 +1,271 @@
+/* estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  color: #0000008c;
+  padding-top: 100px;
+  line-height: 1.5;
+}
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 800;
+}
+/* HEADER */
+header {
+  width: 100%;
+  display: flex;
+  background-color: #2cd3e1;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.logo-top {
+  width: 10rem;
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  color: #0000005c;
+}
+
+/* BANNER */
+#banner {
+  width: 100%;  
+  height: 80vh;
+  background-image: url("../assets/recepcao.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+#banner h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 1rem;
+}
+
+/* ABOUT */
+.text-container {
+  text-align: center;
+  padding: 2.2rem;
+}
+
+.text-container h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.text-container p {
+  width: 100%;
+  max-width: 800px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* FEATURES FLEX*/
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.features h2 {
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.features ul {
+  list-style-position: inside;
+}
+/* especialidades */
+#specialities {
+  margin-top: 1.2rem;
+}
+#specialities h3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+/* cards */
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 0 1rem;
+}
+
+.cards img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.card span {
+  padding: 0.8rem;
+}
+
+/* BUTTON */
+.btn {
+  background-color: #2cd3e1;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* CONTATO */
+.contact-container h2 {
+  font-weight: 600;
+}
+.contact-container p {
+  margin-bottom: 0.8rem;
+}
+
+iframe {
+  padding: 0 1.5rem;
+  width: 100%;
+  min-width: 700px;
+}
+
+/* FOOTER. */
+footer {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  background-color: #177078;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-footer {
+  padding-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 200px;
+  min-width: 90px;
+}
+.info-footer p {
+  color: #fff;
+  letter-spacing: 1.1px;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .text-container {
+    margin: 0 auto;
+  }
+  .top-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    border-top: 2px solid black;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar li a {
+    font-size: 1.2rem;
+  }
+
+  #banner {
+    margin-top: 2rem;
+    height: 250px;
+    padding: 1.1rem;
+  }
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .features img {
+    display: none;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  iframe {
+    display: none;
+  }
+}
