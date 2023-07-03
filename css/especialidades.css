@@ -54,6 +54,11 @@ table th {
 table td {
   padding-left: 1rem;
 }
+
+.table-container:last-child {
+  margin-bottom: 3rem;
+}
+
 table tbody tr:nth-of-type(odd) {
   background-color: #ccc;
 }
