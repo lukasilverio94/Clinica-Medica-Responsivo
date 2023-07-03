@@ -1,5 +1,5 @@
 #nav-services {
-  margin: 3.5rem 0;
+  margin: 4rem 0 2rem 0;
   display: flex;
   justify-content: center;
 }
@@ -25,7 +25,7 @@
 }
 
 .container-info p {
-  text-align: center; 
+  text-align: center;
 }
 /* TABLE */
 .table-container {
@@ -65,9 +65,9 @@ table tbody tr:nth-of-type(even) {
 
 @media (max-width: 455px) {
   header {
-    position: relative;    
+    position: relative;
   }
- 
+
   #nav-services nav ul {
     flex-wrap: wrap;
     justify-content: center;
@@ -92,7 +92,7 @@ table tbody tr:nth-of-type(even) {
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   #nav-services nav ul {
     flex-wrap: wrap;
     justify-content: center;
