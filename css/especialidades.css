@@ -1,5 +1,5 @@
 #nav-services {
-  margin: 2rem 0;
+  margin: 3.5rem 0;
   display: flex;
   justify-content: center;
 }
@@ -9,13 +9,12 @@
 }
 
 #nav-services ul li a {
-  text-decoration: none; 
+  text-decoration: none;
   margin-right: 1.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   color: #0000008c;
   border-bottom: 3px solid #2cd3e1;
-  
 }
 
 .container h1 {
@@ -23,6 +22,10 @@
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.container-info p {
+  text-align: center; 
 }
 /* TABLE */
 .table-container {
@@ -59,20 +62,23 @@ table tbody tr:nth-of-type(even) {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 425px) {
-  #nav-services {
-    padding-top: 6rem;
+
+@media (max-width: 455px) {
+  header {
+    position: relative;    
   }
+ 
   #nav-services nav ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
   }
   #nav-services nav ul li a {
     font-size: 1.2rem;
   }
   .text-container {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .container h2 {
     font-size: 1.3rem;
@@ -86,20 +92,18 @@ table tbody tr:nth-of-type(even) {
   }
 }
 
-@media (max-width: 768px){
-  #nav-services {
-    padding-top: 2.5rem;
-  }
+@media (max-width: 768px) { 
   #nav-services nav ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
   }
   #nav-services nav ul li a {
     font-size: 1.2rem;
   }
   .text-container {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   table {
@@ -107,9 +111,9 @@ table tbody tr:nth-of-type(even) {
   }
 
   table td {
-    padding: 1rem 0;
+    padding: 0.6rem 1rem;
   }
   .table-container img {
     display: none;
   }
-} 
+}
